@@ -1,0 +1,35 @@
+.form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.input {
+    width: 350px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.button {
+    width: 150px;
+    height: 80px !important;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 680px) {
+    .input {
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .form  {
+        flex-direction: column;
+    }
+}

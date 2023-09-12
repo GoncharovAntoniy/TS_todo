@@ -1,0 +1,59 @@
+.todo {
+    color: white;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.h2 {
+    color: white;
+}
+
+.todoCount {
+    color: white;
+}
+
+.select_filter {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    max-width: 200px;
+    font-size: 25px;
+    font-family: cursive;
+    padding: 10px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: none;
+    background-color: white;
+    padding-right: 1em;
+}
+
+.option {
+    width: 200px;
+}
+
+
+@media screen and (max-width: 680px) {
+    .input {
+        max-width: 200px;
+    }
+    .select_filter {
+        font-size: 20px;
+    }
+    .option {
+        max-width: 200px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .input {
+        max-width: 200px;
+    }
+    .select_filter {
+        font-size: 15px;
+    }
+}
+

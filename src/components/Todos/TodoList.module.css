@@ -1,0 +1,149 @@
+h3 {
+    color: black;
+}
+
+.todolist {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 15px;
+    width: 510px;
+    max-height: 45px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+}
+.todolist_text {
+    color: black;
+    font-family: cursive;
+}
+
+.todolist img {
+    width: 50px;
+}
+
+
+.todoIcon {
+    font-size: 28px;
+    color: rgb(7, 98, 123);
+}
+
+.deleteIcon {
+    font-size: 32px;
+    cursor: pointer;
+    transition: .3s;
+    color: gray;
+}
+
+.checkIcon {
+    font-size: 32px;
+    cursor: pointer;
+    transition: .3s;
+    color: gray;
+}
+
+.deleteIcon:hover {
+    color: red;
+    transform: scale(1.3);} .checkIcon:hover {
+    color: green;
+    transform: scale(1.3);}
+
+.completedTodo {
+    background-color: unset;
+    border-color: gray;
+    color: gray;
+}
+
+.todolist.compleatedTodo .todoIcon,
+.todolist.compleatedTodo .deleteIcon,
+.todolist.compleatedTodo .checkIco {
+    color: gray;
+}
+
+
+.button_edit {
+    position: absolute;
+    right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: .3s;
+    color: rgb(100, 100, 239);
+}
+.edit_input {
+    border: none;
+    width: 100%;
+    outline: none;
+    height: 100%;
+    color: black;
+    font-family: cursive;
+    font-size: 25px;
+}
+.label_edit {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 15px;
+    width: 510px;
+    max-height: 45px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 680px) {
+    .todolist  {
+        max-width: none;
+        width: auto;
+        max-height: none;
+        flex: 0 0 80%;
+    }
+    .label_edit {
+        max-width: none;
+        width: auto;
+        max-height: none;
+        flex: 0 0 80%;
+    }
+    .edit_input {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .todolist_text {
+        font-size: 20px;
+    }
+    .edit_input {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .todolist  {
+        width: auto;
+        max-height: none;
+        height: auto;
+        flex-wrap: wrap;
+        font-size: 15px;
+        max-width: 350px;
+    }
+
+    .todolist_text {
+        text-wrap: wrap;
+    }
+    .item {
+        flex-wrap: wrap;
+        font-size: 15px;
+        flex: 0 1 70%;
+    }
+}
+
+
